@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.header{
+    height: 20vh;
+    width: 60vw;
+    margin: auto;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox{
+    height: 20vh;
+    width: 60vw;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inp{
+    width: 60%;
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid black;
+    border-right: 1px solid black;
+    height: 35px;
+    font-size: 20px;
+}
+
+#btn{
+    height: 35px;
+    width: auto;
+    background-color: black;
+    color:white;
+    margin-left: 10px;
+    padding-top: 3px;
+    border-radius: 20%;
+}
+
+.result{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+
+    width: 60vw;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.idk{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+
+    width: 60vw;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.divider{
+    width: 60vw;
+    border: 1px solid black;
+    opacity: 0.1;
+    margin: auto;
+}
+
+.phonetics{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: -15px;
+}
+
+#sound{
+    opacity: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.desc{
+    width: 60vw;
+    margin: auto;
+}
+
+.phonetic{
+    font-weight: 300;
+}
+
+#footer{
+    font-weight: 100;
+    text-align: center;
+}
