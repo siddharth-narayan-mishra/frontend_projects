@@ -1,9 +1,10 @@
 let city_name=document.getElementById("search");
 let button = document.getElementById("search-btn");
+let apiKey = "Enter your OpenWeatherMap API key";
 
 
 function fetchWeather(city_){
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+city_+'&appid=e492c752bb82b0381cfffba13899576d&units=metric')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q='+city_+apiKey)
         .then((response)=> response.json())
         .then((data)=>{
             console.log(data)
