@@ -2,23 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the.weather</title>
+    <title>weather.me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="title1">
-        <p><i id="sun" class="fa-regular fa-sun"></i> the.weather</p>
+    <div class="background">
+        <div class="header">
+            <h1 class="heading">weather.me</h1>
+            <input type="text" class="input" placeholder="Search for weather" id="search">
+            <label for="search"><button  class="search-btn" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button></label>
+            <div class="error"></div>
+        </div>
+
+        <div class="main">
+
+            <div class="details">
+                <div class="big-icon">
+                    <img class="b-icon" src=""></img>
+                    <span class="desc">Broken Clouds</span>
+                </div>
+                <div class="ver-divider"></div>
+                <div class="temp">
+                    <div class="date">Wednesday 20 December 15:00</div>
+                    <div class="big-temp">22&degC</div>
+                    <div class="feels-like">Feels like 23&degC</div>
+                </div>
+                <div class="ver-divider"></div>
+                <div class="more-details">
+                    <h4>MORE DETAILS:</h4>
+                    <div class="more-detail" id="hum">Humidity: 70%</div>
+                    <div class="more-detail" id="pres">Pressure: 1013 hPa</div>
+                    <div class="more-detail" id="wind">Wind: 10 kph</div>
+                </div>
+            </div>
+
+            <div class="hourly">
+                <div class="hcard">
+                    <img src="" id="icon0"></imgs=>
+                    <p class="htemp" id="temp0">17&degC</p>
+                    <p id="time0">0:00</p>
+                </div>
+                <div class="hcard">
+                    <img src="" id="icon3"></img>
+                    <p class="htemp" id="temp3">17&degC</p>
+                    <p id="time3">3:00</p>
+                </div>
+                <div class="hcard">
+                    <img src="" id="icon6"></img>
+                    <p class="htemp" id="temp6">17&degC</p>
+                    <p id="time6">6:00</p>
+                </div>
+                <div class="hcard">
+                    <img src="" id="icon9"></img>
+                    <p class="htemp" id="temp9">17&degC</p>
+                    <p id="time9">9:00</p>
+                </div>
+                <div class="hcard">
+                    <img src="" id="icon12"></img>
+                    <p class="htemp" id="temp12">17&degC</p>
+                    <p id="time12">12:00</p>
+                </div>
+                <div class="hcard">
+                    <img src="" id="icon15"></img>
+                    <p class="htemp" id="temp15">17&degC</p>
+                    <p id="time15">15:00</p>
+                </div>
+                <div class="hcard">
+                    <img src="" id="icon18"></img>
+                    <p class="htemp" id="temp18">17&degC</p>
+                    <p id="time18">18:00</p>
+                </div>
+                <div class="hcard">
+                    <img src="" id="icon21"></img>
+                    <p class="htemp" id="temp21">17&degC</p>
+                    <p id="time21">21:00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="card">
+                <div class="card-date" id="card-date0">20 December</div>
+                <div class="min-max"><p>min. <b id="minTempd0">17&degC</b></p><p>max. <b id="maxTempd0">22&degC</b></p></div>
+                <div class="small-icon"><img src="" id="icond0"></img></div>
+                <div class="condn" id="condn0">Cloudy</div>
+            </div>
+            <div class="card">
+                <div class="card-date" id="card-date1">20 December</div>
+                <div class="min-max"><p>min. <b id="minTempd1">17&degC</b></p><p>max. <b id="maxTempd1">22&degC</b></p></div>
+                <div class="small-icon"><img src="" id="icond1"></img></div>
+                <div class="condn" id="condn1">Cloudy</div>
+            </div>
+            <div class="card">
+                <div class="card-date" id="card-date2">20 December</div>
+                <div class="min-max"><p>min. <b id="minTempd2">17&degC</b></p><p>max. <b id="maxTempd2">22&degC</b></p></div>
+                <div class="small-icon"><img src="" id="icond2"></img></div>
+                <div class="condn" id="condn2">Cloudy</div>
+            </div>
+            <div class="card">
+                <div class="card-date" id="card-date3">20 December</div>
+                <div class="min-max"><p>min. <b id="minTempd3">17&degC</b></p><p>max. <b id="maxTempd3">22&degC</b></p></div>
+                <div class="small-icon"><img src="" id="icond3"></img></div>
+                <div class="condn" id="condn3">Cloudy</div>
+            </div>
+            <div class="card">
+                <div class="card-date" id="card-date4">20 December</div>
+                <div class="min-max"><p>min. <b id="minTempd4">17&degC</b></p><p>max. <b id="maxTempd4">22&degC</b></p></div>
+                <div class="small-icon"><img src="" id="icond4"></img></div>
+                <div class="condn" id="condn4">Cloudy</div>
+            </div>
+        </div>
     </div>
-    <div class="searchbar">
-        <input type="text" id="search" placeholder="Enter Location">
-        <label for="search"><button id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button></label>
-    </div>
+
     <script src="app.js"></script>
+
 </body>
 </html>
